@@ -1,0 +1,73 @@
+.farikmax-contact {
+	background: url("../img/contact-bg.jpg") no-repeat;
+	padding-top: 90px;
+	padding-bottom: 110px;
+}
+
+.contact__title {
+	text-align: center;
+	text-transform: capitalize;
+	font-size: $main-title;
+	font-weight: 700;
+	margin-bottom: px_to_rem(40px);
+}
+
+.contact__subtitle {
+	text-align: center;
+	justify-content: center;
+	font-size: $middle-size;
+	font-weight: 300;
+	line-height: px_to_rem(25px);
+	margin-bottom: px_to_rem(40px);
+}
+
+.contact__form--input{
+	min-width: 100%;
+	min-height: px_to_rem(50px);
+	margin-bottom: px_to_rem(15px);
+	background-color: #70d5d1;
+	border: none;
+	padding-left: 20px;
+	color: $white;
+	opacity: 0.7;
+}
+
+input[type].contact__form--input::-webkit-input-placeholder {
+	color: $white;
+	font-size: px_to_rem(15px);
+	font-weight: 300;
+}
+
+.contact__form--textarea {
+	min-width: 100%;
+	background-color: #70d5d1;
+	opacity: 0.7;
+	padding-left: 20px;
+	border: none;
+	padding-top: 20px;
+}
+
+textarea.contact__form--textarea::-webkit-input-placeholder {
+	color: $white;
+	font-size: px_to_rem(15px);
+	font-weight: 300;
+}
+
+.contact-description {
+	font-size: px_to_rem(17px);
+	font-weight: 300;
+	margin-left: -15px;
+
+	.contact-description--p {
+		margin-bottom: 20px;
+	}
+
+	.uppercase {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
