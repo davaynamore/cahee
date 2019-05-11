@@ -1,0 +1,30 @@
+.vova-footer {
+  padding: 30px 0;
+  background-color: $black;
+  color: $grey;
+  text-align: center;
+
+  &__reserved {
+    font-size: $base-size;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: $sec-font;
+    font-size: $footer-size;
+    color: $grey;
+
+    &:hover {
+      color: $grey;
+    }
+  }
+
+  &__author {
+    color: $grey;
+    font-weight: 300;
+
+    &>* {
+      color: $red;
+    }
+  }
+}
