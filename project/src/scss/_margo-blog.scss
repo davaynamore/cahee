@@ -1,0 +1,80 @@
+.margo-blog{
+	background-color: $violet;
+	color: $white;
+	padding: px_to_rem(100px) 0;
+
+	&__title{
+		font-size: $main-title;
+		font-weight: 700;
+		margin-bottom: px_to_rem(30px);
+	}
+
+	&__subtitle{
+		font-weight: 300;
+	}
+
+	&__wrapper-image{
+		@include padding-hack(84%);
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+		
+		&::before{
+			content: "";
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			position: absolute;
+			z-index: 1;
+			background-image: linear-gradient(to top, rgba(0, 0, 0, .5) 20%, rgba(0, 0, 0, .8) 40%, rgba(0, 0, 0, 0) 100%);
+		}
+	}
+
+	&__image{
+
+	}
+
+	&__date{
+		position: absolute;
+		top: 30px;
+		left: 45px;
+		z-index: 1;
+		display: block;
+		background-color: rgba(0, 0, 0, .5);
+		width: 60px;
+		height: 60px;
+		border-radius: 5px;
+		font-size: $big-size;
+		font-weight: 700;
+		text-align: center;
+		line-height: .8;
+		padding: 2px;
+	}
+
+	&__text{
+		position: absolute;
+		bottom: 0;
+		left: 15px;
+		z-index: 1;
+		padding: 20px;
+	}
+
+	&__capture{
+		font-size: $large-size;
+		font-weight: 700;
+	}
+
+	&__autor{
+		font-size: $small-size;
+		font-weight: 300;
+	}
+
+	&__btn{
+		@include btn($red, $red);
+		width: 100%;
+
+		@media all and (min-width: 992px){
+			padding: 10px 5px;
+		}
+		
+	}
+}
