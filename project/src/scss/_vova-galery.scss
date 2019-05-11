@@ -1,0 +1,29 @@
+.vova-galery {
+  text-align: center;
+  background-color: $yellow;
+  padding: 100px 0 120px;
+  @media screen and (max-width: 992px) {
+    padding: 16px 0;
+  }
+
+  &__title {
+    @include text($main-title, 700, $black);
+  }
+
+  &__text {
+    @include text($middle-size, 300, $black);
+  }
+
+  &__img-wrapper {
+    @include padding-hack(72%, cover);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  &__btn {
+    @include btn($light-blue, $light-blue);
+    display: inline-block;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}
