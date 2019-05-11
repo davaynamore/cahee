@@ -1,0 +1,36 @@
+.footer {
+	background-color: $black;
+	min-height: 15vh;
+}
+
+.foot {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 25px;
+	font-weight: 300;
+	min-height: 15vh;
+}
+
+.dog {
+	font-size: $base-size;
+	color: $footer_color;
+	font-family: $main-font;
+}
+
+.logo {
+	font-size: $footer-size;
+	color: $footer_color;
+	font-family: $sec-font;
+	font-weight: 400;
+}
+
+.by {
+	font-size: $base-size;
+	color: $footer_color;
+	font-family: $main-font;
+}
+
+.red {
+	color: $red;
+}
