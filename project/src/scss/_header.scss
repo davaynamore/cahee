@@ -1,0 +1,183 @@
+.header {
+	min-height: 100vh;
+	padding: 50px 0 70px;
+	color: $black;
+
+	@media screen and (min-width: 992px) {
+		background: url('../img/header-bg.jpg') no-repeat center;
+		background-size: cover;
+	}
+
+	&__logo {
+		display: flex;
+		color: $black;
+		font-family: $sec-font;
+		font-size: $logo-size;
+		font-weight: 400;
+		text-transform: capitalize;
+
+		&:hover {
+			color: $black;
+		}
+	}
+
+	&__menu {
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
+
+		@media screen and (min-width: 991px) {
+			width: 100%;
+		display: flex;
+		justify-content: space-between;
+		}
+	}
+
+	&__list {
+		display: none;
+
+		@media all and (min-width: 992px) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&__link {
+		color: $black;
+		font-weight: 700;
+		text-transform: uppercase;
+		border-top: 3px solid transparent;
+		padding-top: 5px;
+		transition: all .3s ease;
+
+		&:hover {
+			color: $black;
+			border-top-color: $orange;
+		}
+
+		@media screen and (max-width: 991px) {
+			text-align: center;
+		}
+	}
+
+	.burger-menu {
+		display: flex;
+		justify-content: flex-end;
+		width: 50px;
+		padding: 7.5px 0 7.5px 2%;
+
+		@media screen and (min-width: 992px) {
+			display: none;
+		}
+	}
+
+	.bar {
+		display: flex;
+		margin-bottom: 8px;
+		width: 30px;
+		height: 2px;
+		background-color: $orange;
+		z-index: 999;
+	}
+
+	.desktop {
+		display: none;
+
+		@media screen and (min-width: 992px) {
+			display: flex;
+		justify-content: space-between;
+		width: 100%;
+		}
+	}
+
+	.mobile {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		align-items: flex-end;
+
+		@media screen and (min-width: 992px) {
+			display: none;
+		}
+	}
+
+	&__content {
+
+		@media screen and (min-width: 992px) {
+			padding: 60px 0;
+		}
+	}
+
+	&__title {
+		font-size: $title-size;
+		font-weight: 400;
+		text-transform: capitalize;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-size: $middle-size;
+		font-weight: 300;
+		line-height: 27px;
+		margin-bottom: 30px;
+	}
+
+	&__btn {
+		@include btn($orange, $orange);
+
+		@media screen and (max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+	&__scroll {
+		display: flex;
+		position: relative;
+	}
+
+	.scroll-downs {
+		position: absolute;
+		top: 0px;
+		left: 50%;
+		width: 34px;
+		height: 55px;
+		cursor: pointer;
+	}
+
+	.mousey {
+		width: 3px;
+		padding: 10px 15px;
+		height: 35px;
+		border: 2px solid $black;
+		border-radius: 25px;
+		opacity: 0.75;
+		box-sizing: content-box;
+	}
+
+	.scroller {
+		width: 5px;
+		height: 10px;
+		border-radius: 25%;
+		background-color: $black;
+		animation-name: scroll;
+		animation-duration: 2.2s;
+		animation-timing-function: cubic-bezier(.15, .41, .69, .94);
+		animation-iteration-count: infinite;
+	}
+
+	@keyframes scroll {
+		0% {
+			opacity: 0;
+		}
+
+		10% {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		100% {
+			transform: translateY(15px);
+			opacity: 0;
+		}
+	}
+}
