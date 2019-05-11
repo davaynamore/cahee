@@ -1,0 +1,27 @@
+.olga-subscribe {
+	min-height: 50vh;
+	background: url("..//img/bm-1.jpg") no-repeat 80% 50%;
+	padding: 140px 0;
+
+	h3 {
+		font-size:$big-size;
+		text-transform:capitalize;
+		font-weight: 600;
+		margin-bottom: 35px;
+	}
+	.text-subscribe {
+		line-height: 1.8;
+		font-size: $small-size;
+		margin-bottom: 33px;
+	}
+
+	input {
+		width: 100%;
+		min-height: 50px;
+	}
+	.main__btn {
+		background: $green;
+		height: 50px;
+	}
+
+}

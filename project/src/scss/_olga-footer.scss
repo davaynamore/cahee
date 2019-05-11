@@ -1,0 +1,26 @@
+.olga-footer {
+	background:#262626;
+	min-height: 90px;
+	a {
+		color:$red;
+	}
+}
+
+.left,
+.center,
+.right {
+	text-align: center;
+	vertical-align: middle;
+	color:$grey;
+	font-size:$small-size;
+	padding: 40px 0;
+}
+.footer-copyrights {
+
+	text-align: center;
+}
+
+.center {
+	font-family:$sec-font;
+	font-size: $footer-size;
+}
