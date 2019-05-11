@@ -1,0 +1,55 @@
+.geka-footer {
+	background-color: #262626;
+	padding: 28px 0;
+
+	&__copyright {
+		font-size: 15px;
+		color:#b2b2b2;
+
+		@media all and (max-width: 576px) {
+			text-align: center;
+		}
+	}
+
+	&__author {
+		font-size: 15px;
+		color:#b2b2b2;
+		@media all and (max-width: 576px) {
+			text-align: center;
+		}
+	}
+
+	&__color {
+		color:red;
+	}
+
+	&__footer-row {
+		@media all and (min-width: 576px) {
+			justify-content: space-between;
+		}
+		@media all and (max-width: 576px) {
+			justify-content: center;
+		}
+
+		& > *:not(:last-child) {
+
+			@media all and (max-width: 576px) {
+				margin-bottom: 15px;
+			}
+			
+		}
+	}
+
+	&__image {
+		width: 70px;
+	}
+
+	&__developer {
+		text-align: right;
+	}
+
+
+
+
+	@include padding-hack(43);
+}
