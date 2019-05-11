@@ -1,0 +1,39 @@
+.about_us {
+	background-color: #00AFAF;
+	min-height: 90vh;
+}
+
+.text {
+	color: $white;
+	font-family: $main-font;
+	max-width: 500px;
+
+	&-head {
+		font-size: $main-title;
+		font-weight: 700;
+	}
+
+	&-text {
+		font-size: $base-size;
+		font-weight: 300;
+	}
+}
+
+.img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.img-d {
+	max-width: 50%;
+
+}
+
+.about {
+	@media screen and (max-width: 992px) {
+		flex-direction: column;
+	}
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
