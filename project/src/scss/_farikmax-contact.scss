@@ -1,0 +1,140 @@
+.farikmax-contact {
+	background: url(../img/contact-bg.jpg) no-repeat center;
+	padding: 100px 0 120px 0;
+	background-size: cover;
+
+	::-webkit-input-placeholder {
+		color: $white;
+		font-size: px_to_rem(15px);
+		font-weight: 300;
+	}
+
+	:-moz-placeholder {
+		color: $white;
+		font-size: px_to_rem(15px);
+		font-weight: 300;
+	}
+
+	:-ms-input-placeholder {
+		color: $white;
+		font-size: px_to_rem(15px);
+		font-weight: 300;
+	}
+
+	:-moz-placeholder {
+		color: $white;
+		font-size: px_to_rem(15px);
+		font-weight: 300;
+	}
+
+	@media all and (max-width: 1199px) {
+		padding: px_to_rem(20px) 0;
+	}
+}
+
+.contact__title {
+	text-align: center;
+	text-transform: capitalize;
+	font-size: $main-title;
+	font-weight: 700;
+	margin-bottom: px_to_rem(40px);
+
+	@media all and (max-width: 1199px) {
+		margin-bottom: px_to_rem(10px);
+	}
+
+	@media all and (max-width: 575px) {
+		font-size: $title-size;
+	}
+}
+
+.contact__subtitle {
+	text-align: center;
+	justify-content: center;
+	font-size: $middle-size;
+	font-weight: 300;
+	line-height: px_to_rem(25px);
+	margin-bottom: px_to_rem(40px);
+
+	@media all and (max-width: 991px) {
+		margin-bottom: px_to_rem(20px);
+	}
+}
+
+.contact__form{
+
+	&--input {
+		min-width: 100%;
+		min-height: px_to_rem(50px);
+		margin-bottom: px_to_rem(15px);
+		background-color: #70d5d1;
+		border: none;
+		padding: 0 0 0 20px;
+		color: $white;
+		opacity: 0.7;
+		font-weight: 700;
+
+		&:focus {
+			border-left: 5px solid $blue;
+			background-color: $aqua;
+			opacity: 1;
+		}
+
+		&:hover {
+			background-color: $aqua;
+		}
+	}
+
+	@media all and (max-width: 992px) {
+		margin-bottom: 15px;
+	}
+}
+
+.contact__form--textarea {
+	min-width: 100%;
+	background-color: #70d5d1;
+	opacity: 0.7;
+	padding: 20px 0 0 20px;
+	border: none;
+	color: $white;
+	font-weight: 700;
+
+	&:focus {
+		border-left: 5px solid $blue;
+		background-color: $aqua;
+		opacity: 1;
+	}
+
+	&:hover{
+		background-color: $aqua;
+	}
+}
+
+.contact-description {
+	font-size: px_to_rem(17px);
+	font-weight: 300;
+	margin-left: -15px;
+
+	&--p {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.uppercase {
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media all and (max-width: 991px) {
+		text-align: center;
+		justify-content: center;
+		
+	}
+}
